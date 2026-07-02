@@ -4,8 +4,7 @@ import "go.mongodb.org/mongo-driver/bson/primitive"
 
 type Book struct {
 	ID     primitive.ObjectID `json:"id,omitempty" bson:"_id,omitempty"`
-	Author string             `json:"author,omitempty" bson:"author,omitempty"` 
 	Title  string             `json:"title,omitempty" bson:"title,omitempty"`   
-	
+	Author string             `json:"author,omitempty" bson:"author,omitempty"` 
 	Year   int                `json:"year,omitempty" bson:"year,omitempty"`               
 }
